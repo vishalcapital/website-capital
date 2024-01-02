@@ -135,7 +135,6 @@ body{
 }
 
 /* PROCESS SECTION */
-
 .process-icons{
   width: 4.375rem;
   height: 4.375rem;
@@ -210,6 +209,46 @@ body{
   display: block;
   margin: auto;
 }
+
+/* GALLERY */
+.image-zoom{
+  position: relative;
+  overflow: hidden;
+}
+
+.image-zoom-wrapper{
+  overflow: hidden;
+  position: relative;
+}
+
+.image-zoom-wrapper img{
+  transition: var(--transition);
+}
+
+.image-zoom-wrapper:hover img{
+  transform: scale(1.1);
+}
+
+.image-gallery-item .image-zoom-icon{
+   background: var(--brand-color);
+   color: #fff;
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 2rem;
+   padding: 0.2rem 1rem;
+   opacity: 0;
+}
+
+.image-gallery-item:hover .image-zoom-icon{
+  opacity: 1;
+  top: 50%;
+}
+
+
+
+
 
 /* TESTIMONIALS */
 .testimonial-item .testimonial-header{
